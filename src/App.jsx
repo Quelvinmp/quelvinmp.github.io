@@ -1,9 +1,16 @@
+import { useContext } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import { StateContext } from "./context/StateProvider";
+
 function App() {
+  const {lightMode} = useContext(StateContext);
 
   return (
-    <>
-  <h1>e</h1>
-    </>
+    <main data-theme={`${lightMode ? 'bumblebee' : 'dark'}`}>
+      <Header />
+      <Hero />
+    </main>
   )
 }
 
