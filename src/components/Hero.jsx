@@ -3,7 +3,7 @@ import perfil from '../images/perfil-remove-bg.png'
 
 export default function Hero() {
   return (
-    <div className="flex flex-col min-h-screen hero bg-base-200">
+    <div className="flex flex-col min-h-screen hero bg-base-200" id="top">
       <div className="flex-col flex-1 gap-10 lg:gap-[1rem] hero-content lg:flex-row-reverse w-full lg:justify-around justify-center">
         <img src={perfil} className="max-w-sm rounded-lg" />
         <div className="flex flex-col items-center justify-center">

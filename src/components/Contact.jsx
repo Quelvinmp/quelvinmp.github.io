@@ -22,7 +22,7 @@ export default function Contact() {
       <h1 className="mb-8 text-4xl text-center">Entre em contato!</h1>
       <form className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="quelvinmp.github.io/feedback"
+        <input type="hidden" name="_next" value="https://quelvinmp.github.io/feedback"
         />
         <div className="flex flex-col items-center justify-center w-full gap-8 m-auto">
 

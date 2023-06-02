@@ -18,7 +18,7 @@ export default function Header() {
             <li><a href="https://drive.google.com/file/d/1Xby0zMHttRihEsUs-huDYXf6f7L8IwgF/view?usp=sharing" target="_blank" rel="noreferrer" className="text-left tooltip-bottom tooltip" data-tip="Abre uma nova aba">Currículo</a></li>
           </ul>
         </div>
-        <a className="text-xl normal-case btn btn-ghost">Quelvin Machado</a>
+        <a href="#top" className="text-xl normal-case btn btn-ghost">Quelvin Machado</a>
         <div className="lg:hidden">
           <ChangeTheme />
         </div>
