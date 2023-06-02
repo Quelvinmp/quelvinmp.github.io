@@ -8,9 +8,9 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/" Component={Portifolio}/>      
-      <Route exact path="/feedback" Component={Feedback}/>      
-      <Route path="*" Component={NotFound}/>      
+      <Route exact path="/" element={<Portifolio/>}/>      
+      <Route exact path="/feedback" element={<Feedback/>}/>      
+      <Route path="*" element={<NotFound/>}/>      
     </Routes>
   )
 }

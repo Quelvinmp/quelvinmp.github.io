@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold leading-tight text-center">Olá, me chamo <span className="text-primary">Quelvin</span>!</h1>
           <p className="max-w-lg pt-6 text-center">Comecei a estudar programação no final de 2021 e desde então não me imagino trabalhando com outra coisa se não nessa área, que tem uma incrível capacidade de resolver tanto pequenos problemas do dia a dia como o de mega empresas!</p>
-          <p className="btn btn-link">Posso resolver o da sua?</p>
+          <a href="#contact" className="btn btn-link">Posso resolver o da sua?</a>
         </div>
       </div>
       <BsChevronDoubleDown className="text-2xl font-extrabold h-7 w-7 text-primary animate-bounce " />
