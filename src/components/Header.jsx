@@ -2,7 +2,7 @@ import ChangeTheme from "./ChangeTheme";
 
 export default function Header() {
   return (
-    <div className="fixed top-0 left-0 z-10 flex justify-around w-full navbar bg-base-100">
+    <div className="fixed top-0 left-0 z-10 flex justify-around w-full navbar bg-base-100" id="header">
       <div className="flex justify-between w-full navbar-start lg:block lg:w-fit">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
