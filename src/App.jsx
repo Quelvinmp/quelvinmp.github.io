@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Technologies from "./components/Technologies";
 import { StateContext } from "./context/StateProvider";
+import Projects from "./components/Projects";
 
 function App() {
   const {lightMode} = useContext(StateContext);
@@ -12,14 +13,7 @@ function App() {
       <Header />
       <Hero />
       <Technologies />
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
-      <div>wdadaw</div>
+      <Projects />
     </main>
   )
 }
