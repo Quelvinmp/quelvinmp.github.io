@@ -6,6 +6,7 @@ import { StateContext } from "../context/StateProvider";
 import Projects from "../components/Projects";
 import Achievements from "../components/Achievements";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Portifolio() {
   const {lightMode} = useContext(StateContext);
@@ -17,6 +18,7 @@ export default function Portifolio() {
     <Projects />
     <Achievements />
     <Contact />
+    <Footer />
   </main>
   )
 }
