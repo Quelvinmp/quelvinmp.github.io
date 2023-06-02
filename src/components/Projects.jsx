@@ -10,8 +10,8 @@ export default function Projects() {
 
         <div className="flex-row items-center justify-center w-full max-w-lg m-auto shadow-xl max-h-max lg:flex-col card card-compact bg-base-300">
           <div className="w-2/5 lg:w-full">
-            <figure><img className="hidden w-full rounded-t-xl lg:block" src="src/assets/star-wars-desktop.gif" alt="star-wars-desktop" /></figure>
-            <figure className=""><img className="rounded-xl lg:hidden" src="src/assets/star-wars-mobile.gif" alt="star-wars-mobile" /></figure>
+            <figure><img className="hidden w-full rounded-t-xl lg:block" src="src/images/star-wars-desktop.gif" alt="star-wars-desktop" /></figure>
+            <figure className=""><img className="rounded-xl lg:hidden" src="src/images/star-wars-mobile.gif" alt="star-wars-mobile" /></figure>
           </div>
           <div className="w-3/5 space-y-16 lg:space-y-8 card-body lg:w-full lg:items-center">
             <div className="flex flex-col lg:items-center">
