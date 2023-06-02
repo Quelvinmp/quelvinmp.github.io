@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const StateContext = createContext();
 
 export default function StateProvider({children}) {
-  const [lightMode, setLightMode] = useState(true);
+  const [lightMode, setLightMode] = useState(false);
 
   const values = useMemo(() => ({
     lightMode, setLightMode
