@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/" Component={Portifolio}/>      
+      <Route exact path="/portifolio" Component={Portifolio}/>      
       <Route exact path="/feedback" Component={Feedback}/>      
       <Route path="*" Component={NotFound}/>      
     </Routes>
