@@ -17,7 +17,8 @@ export default function Contact() {
   }
   
   return (
-    <div className="bg-base-200 py-14">
+    <div className="bg-base-200 py-14" id="contact">
+      <h1 className="mb-8 text-4xl text-center">Entre em contato!</h1>
       <form className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="http://localhost:5173/feedback"

@@ -2,7 +2,7 @@ import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="pb-4 rounded pt-14 footer footer-center bg-base-300 text-base-content">
+    <footer className="pb-4 rounded pt-14 footer footer-center bg-base-300 text-base-content" id="social">
       <div>
         <div className="grid grid-flow-col gap-8">
           <a href="https://github.com/quelvinmp" target="_blank" className="text-3xl cursor-pointer hover:scale-110" rel="noreferrer"><SiGithub /></a>

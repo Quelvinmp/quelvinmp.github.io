@@ -3,7 +3,7 @@ import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTest
 
 export default function Technologies() {
   return (
-    <div className="w-full max-w-2xl px-8 m-auto py-14 lg:max-w-4xl base-100">
+    <div className="w-full max-w-2xl px-8 m-auto py-14 lg:max-w-4xl base-100" id="habilities">
       <div className="flex flex-col items-center w-full gap-5 lg:grid-cols-2 lg:items-start lg:grid lg:gap-x-20">
         <div className="flex flex-col w-full gap-4">
           <div className="text-2xl divider">Front-end</div>

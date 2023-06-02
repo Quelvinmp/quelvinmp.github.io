@@ -39,7 +39,7 @@ export default function Achievements() {
   }, false);
 
   return (
-    <div className="bg-base-100 py-14">
+    <div className="bg-base-100 py-14" id="achievements">
       <h1 className="text-4xl text-center mb-14">Conquistas</h1>
       <div>
         <Swiper

@@ -9,24 +9,27 @@ export default function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
           <ul tabIndex="0" className="p-2 mt-3 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-            <li><a>Habilidades</a></li>
-            <li><a>Projetos</a></li>
-            <li><a>Minhas Conquistas</a></li>
-            <li><a>Contato</a></li>
+            <li><a href="#habilities">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#achievements">Minhas Conquistas</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#social">Redes</a></li>
+
             <li><a href="https://drive.google.com/file/d/1Xby0zMHttRihEsUs-huDYXf6f7L8IwgF/view?usp=sharing" target="_blank" rel="noreferrer" className="text-left tooltip-bottom tooltip" data-tip="Abre uma nova aba">Currículo</a></li>
           </ul>
         </div>
-        <a className="text-xl normal-case btn btn-ghost ">Quelvin Machado</a>
+        <a className="text-xl normal-case btn btn-ghost">Quelvin Machado</a>
         <div className="lg:hidden">
           <ChangeTheme />
         </div>
       </div>
       <div className="hidden navbar-center lg:flex">
         <ul className="px-1 menu menu-horizontal">
-          <li><a>Habilidades</a></li>
-          <li><a>Projetos</a></li>
-          <li><a>Minhas Conquistas</a></li>
-          <li><a>Contato</a></li>
+          <li><a href="#habilities">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#achievements">Minhas Conquistas</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#social">Redes</a></li>
           <li><a href="https://drive.google.com/file/d/1Xby0zMHttRihEsUs-huDYXf6f7L8IwgF/view?usp=sharing" target="_blank" rel="noreferrer" className="text-left tooltip-bottom tooltip" data-tip="Abre uma nova aba">Currículo</a></li>
         </ul>
       </div>

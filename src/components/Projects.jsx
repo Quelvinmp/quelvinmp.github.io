@@ -2,7 +2,7 @@ import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTest
 
 export default function Projects() {
   return (
-    <div className="bg-base-200 py-14">
+    <div className="bg-base-200 py-14" id="projects">
       <h1 className="text-4xl text-center">Projetos</h1>
 
       {/* xl:grid-cols-3 lg:grid-cols-2 */}
