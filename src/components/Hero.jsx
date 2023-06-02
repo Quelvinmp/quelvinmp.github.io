@@ -12,7 +12,7 @@ export default function Hero() {
           <a href="#contact" className="btn btn-link">Posso resolver o da sua?</a>
         </div>
       </div>
-      <BsChevronDoubleDown className="text-2xl font-extrabold h-7 w-7 text-primary animate-bounce " />
+      <BsChevronDoubleDown className="text-2xl font-extrabold h-7 w-7 text-primary animate-bounce" />
     </div>
   )
 }
