@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState(false)
   const [isDisabled, setIsDisabled] = useState(true);
   const [name, setName] = useState('');
   const [Inputemail, setEmail] = useState('');
@@ -17,10 +18,15 @@ export default function Contact() {
     setIsDisabled(true)
   }
 
+  const handleFormSubmit = () => {
+    setIsLoading(true)
+    document.getElementById('form').submit();
+  }
+
   return (
     <div className="bg-base-200 py-14" id="contact">
       <h1 className="mb-8 text-4xl text-center">Entre em contato!</h1>
-      <form className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST">
+      <form className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST" id="form">
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://quelvinmp.github.io/feedback"
         />
@@ -53,7 +59,18 @@ export default function Contact() {
             verifyFields()
           }}></textarea>
 
-          <button type="submit" className="btn btn-lg btn-primary" disabled={isDisabled}>Enviar Mensagem</button>
+          {/* <button type="submit" className="btn btn-lg btn-primary w-52" disabled={isDisabled} onClick={handleFormSubmit}>
+            <span className={`${isLoading ? 'hidden' : 'inline'}`} >Enviar Mensagem</span>
+            <span className={`${isLoading ? 'inline' : 'hidden'} loading loading-spinner loadin-lg`}></span>
+          </button> */}
+          <label htmlFor="inputSubmit">
+            {isLoading ? (
+              <button className='btn btn-lg btn-primary w-52'><span className="loading loading-spinner loadin-lg"/></button>
+            ) : (
+              <input id='inputSubmit' type="submit" onClick={handleFormSubmit} className="btn btn-lg btn-primary w-52" disabled={isDisabled} value='Enviar Mensagem' />
+            )}
+          </label>
+
 
         </div>
       </form>
