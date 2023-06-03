@@ -8,32 +8,37 @@ export default function Projects() {
       <h1 className="text-4xl text-center">Projetos</h1>
 
       {/* xl:grid-cols-3 lg:grid-cols-2 */}
-      <div className="flex flex-col items-center gap-20 px-8 lg:gap-x-4 lg:gap-y-20 py-14 lg:grid ">
+      <div className="flex flex-col items-center gap-20 px-8 py-14 lg:grid ">
 
-        <div className="flex-row items-center justify-center w-full max-w-lg m-auto shadow-xl max-h-max lg:flex-col card card-compact bg-base-300">
-          <div className="w-2/5 lg:w-full">
-            <figure><img className="hidden w-full rounded-t-xl lg:block" src={starWarsDesktop} alt="star-wars-desktop" /></figure>
-            <figure className=""><img className="rounded-xl lg:hidden" src={starWarsMobile} alt="star-wars-mobile" /></figure>
+        <div className="flex-col items-center justify-center w-full max-w-lg m-auto shadow-xl max-h-max card card-compact bg-base-300">
+          <div className="w-full ">
+            <figure><img className="w-full rounded-t-xl" src={starWarsDesktop} alt="star-wars-desktop" /></figure>
           </div>
-          <div className="w-3/5 space-y-16 lg:space-y-8 card-body lg:w-full lg:items-center">
-            <div className="flex flex-col lg:items-center">
+          <div className="items-center w-full space-y-10 card-body">
+            <div className="flex flex-col items-center ">
               <h2 className="card-title">Star Wars Filters</h2>
-              <p className="lg:text-center">Aplicação consiste uma lógica complexa de vários tipos de filtros que funcionam de forma aninhada</p>
-            </div>
-            <div>
-              <p className="mb-4 font-bold lg:text-center">Tecnologias Utilizadas</p>
-              <div className="flex gap-4">
-                <SiReact className="text-2xl" />
-                <SiJavascript className="text-2xl" />
-                <SiJest className="text-2xl" />
-                <SiTestinglibrary className="text-2xl" />
-                <SiTailwindcss className="text-2xl" />
-                <SiDaisyui className="text-2xl" />
+              <div className="overflow-y-auto max-h-52">
+              <p className="text-center">Aplicação consiste uma lógica complexa de vários tipos de filtros que funcionam de forma aninhada</p>
               </div>
             </div>
-            <div className="justify-end card-actions">
-              <a href="https://github.com/Quelvinmp/Star-Wars-Filters-Project" target="_blank" className="btn btn-link text-secondary" rel="noreferrer">Repositório</a>
-              <a href="https://quelvinmp-star-wars-filters.netlify.app/" target="_blank" className="btn btn-primary" rel="noreferrer">Deploy</a>
+            <div className="flex items-center justify-around w-full ">
+              <div>
+                <p className="mb-4 font-bold text-center">Tecnologias Utilizadas</p>
+                <div className="grid grid-cols-3 gap-2 gap-x-6 sm:flex sm:gap-4">
+                  <SiReact className="text-2xl" />
+                  <SiJavascript className="text-2xl" />
+                  <SiJest className="text-2xl" />
+                  <SiTestinglibrary className="text-2xl" />
+                  <SiTailwindcss className="text-2xl" />
+                  <SiDaisyui className="text-2xl" />
+                </div>
+              </div>
+              <div className="justify-center card-actions">
+                <div className="flex flex-col w-24">
+                <a href="https://github.com/Quelvinmp/Star-Wars-Filters-Project" target="_blank" className="btn btn-link text-secondary" rel="noreferrer">Repositório</a>
+                <a href="https://quelvinmp-star-wars-filters.netlify.app/" target="_blank" className="btn btn-primary" rel="noreferrer">Deploy</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
