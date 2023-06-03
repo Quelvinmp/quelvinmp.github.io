@@ -2,11 +2,7 @@ import { useContext } from "react"
 import { StateContext } from "../context/StateProvider"
 
 export default function ChangeTheme() {
-  const {lightMode, setLightMode} = useContext(StateContext);
-
-  const toggleTheme = () => {
-    setLightMode(!lightMode)
-  }
+  const {toggleTheme} = useContext(StateContext);
 
   return (
 <label className="swap swap-rotate">
