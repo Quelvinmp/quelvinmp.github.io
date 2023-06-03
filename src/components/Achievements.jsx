@@ -11,6 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 // import required modules
 import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
@@ -37,6 +40,9 @@ export default function Achievements() {
   useEffect(() => {
     setViewportWidth();
     changePerView();
+    AOS.init({
+      duration: 1000
+    });
   }, [])
 
   window.addEventListener('resize', function () {
@@ -46,8 +52,8 @@ export default function Achievements() {
 
   return (
     <div className="bg-base-100 py-14" id="achievements">
-      <h1 className="text-4xl text-center mb-14">Conquistas</h1>
-      <div>
+      <h1 className="text-4xl text-center mb-14" data-aos="fade">Conquistas</h1>
+      <div data-aos="fade-right">
         <Swiper
           slidesPerView={perView}
           spaceBetween={30}

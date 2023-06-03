@@ -1,16 +1,26 @@
 import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub } from "react-icons/si";
 import starWarsDesktop from '../images/star-wars-desktop.gif'
 import starWarsMobile from '../images/star-wars-mobile.gif'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 export default function Projects() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, [])
+
   return (
     <div className="bg-base-200 py-14" id="projects">
-      <h1 className="text-4xl text-center">Projetos</h1>
+      <h1 className="text-4xl text-center" data-aos="fade" data-aos-duration="1500">Projetos</h1>
 
       {/* xl:grid-cols-3 lg:grid-cols-2 */}
       <div className="flex flex-col items-center gap-20 px-8 py-14 lg:grid ">
 
-        <div className="flex-col items-center justify-center w-full max-w-lg m-auto shadow-xl max-h-max card card-compact bg-base-300">
+        <div className="flex-col items-center justify-center w-full max-w-lg m-auto shadow-xl max-h-max card card-compact bg-base-300" data-aos="zoom-in">
           <div className="w-full ">
             <figure><img className="w-full rounded-t-xl" src={starWarsDesktop} alt="star-wars-desktop" /></figure>
           </div>

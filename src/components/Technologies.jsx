@@ -1,13 +1,22 @@
 import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub } from "react-icons/si";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 export default function Technologies() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, [])
+
   return (
     <div className="w-full max-w-2xl px-8 m-auto py-14 lg:max-w-4xl base-100" id="habilities">
       <div className="flex flex-col items-center w-full gap-5 lg:grid-cols-2 lg:items-start lg:grid lg:gap-x-20">
         <div className="flex flex-col w-full gap-4">
-          <div className="text-2xl divider">Front-end</div>
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="text-2xl divider" data-aos="fade">Front-end</div>
+          <div className="flex flex-wrap items-center justify-center gap-5" data-aos="fade-right">
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="HTML 5">
               <SiHtml5 className="text-4xl" />
             </div>
@@ -35,8 +44,8 @@ export default function Technologies() {
           </div>
         </div>
         <div className="flex flex-col w-full gap-4">
-          <div className="text-2xl divider">Back-end</div>
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="text-2xl divider" data-aos="fade">Back-end</div>
+          <div className="flex flex-wrap items-center justify-center gap-5" data-aos="fade-right">
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="JavaScript">
               <SiJavascript className="text-4xl" />
             </div>
@@ -49,8 +58,8 @@ export default function Technologies() {
           </div>
         </div>
         <div className="flex flex-col w-full gap-4">
-          <div className="text-2xl divider">Testes</div>
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="text-2xl divider" data-aos="fade">Testes</div>
+          <div className="flex flex-wrap items-center justify-center gap-5" data-aos="fade-right">
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="React Testing Library">
               <SiTestinglibrary className="text-4xl" />
             </div>
@@ -60,8 +69,8 @@ export default function Technologies() {
           </div>
         </div>
         <div className="flex flex-col w-full gap-4">
-          <div className="text-2xl divider">Outros</div>
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="text-2xl divider" data-aos="fade">Outros</div>
+          <div className="flex flex-wrap items-center justify-center gap-5" data-aos="fade-right">
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Git">
               <SiGit className="text-4xl" />
             </div>
