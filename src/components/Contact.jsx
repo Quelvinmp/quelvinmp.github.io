@@ -1,4 +1,7 @@
 import { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false)
@@ -23,10 +26,16 @@ export default function Contact() {
     document.getElementById('form').submit();
   }
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, [])
+
   return (
     <div className="bg-base-200 py-14" id="contact">
-      <h1 className="mb-8 text-4xl text-center">Entre em contato!</h1>
-      <form className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST" id="form">
+      <h1 className="mb-8 text-4xl text-center" data-aos="fade" data-aos-duration="1500">Entre em contato!</h1>
+      <form data-aos="zoom-in" className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST" id="form">
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://quelvinmp.github.io/feedback"
         />
