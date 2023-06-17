@@ -4,6 +4,7 @@ import premioFundamentos from '../images/premio-fundamentos.png'
 import tecladoDeOuro from '../images/teclado-de-ouro.png'
 import finalistaHackaton from '../images/finalista-hackaton.png'
 import certificadoFundamentos from '../images/certificado-fundamentos.png'
+import certificadoFrontend from '../images/certificado-frontend.png'
 import onTrackFundamentos from '../images/ontrack-fundamentos.png'
 
 // Import Swiper styles
@@ -63,6 +64,8 @@ export default function Achievements() {
           modules={[Navigation]}
           className="p-2 mySwiper"
         >
+          <SwiperSlide className="flex h-auto "><a href="https://www.linkedin.com/posts/quelvinmachadodepaula_m%C3%B3dulo-front-end-quelvin-machado-de-paula-activity-7075797225540337664-JtMH?utm_source=share&utm_medium=member_desktop" target="_blank" className="m-auto hover:scale-105" rel="noreferrer"><img src={certificadoFrontend} alt="" /></a></SwiperSlide>
+
           <SwiperSlide className="flex h-auto "><a href="https://www.linkedin.com/posts/quelvinmachadodepaula_vqv-gotrybe-soutryber-activity-7031026425033809920-Vboz?utm_source=share&utm_medium=member_desktop" target="_blank" className="m-auto hover:scale-105" rel="noreferrer"><img src={embaixador} alt="" /></a></SwiperSlide>
 
           <SwiperSlide className="flex h-auto "><a href="https://www.linkedin.com/posts/quelvinmachadodepaula_vqv-gotrybe-soutryber-activity-7031026425033809920-Vboz?utm_source=share&utm_medium=member_desktop" target="_blank" className="m-auto hover:scale-105" rel="noreferrer"><img src={premioFundamentos} alt="" /></a></SwiperSlide>
