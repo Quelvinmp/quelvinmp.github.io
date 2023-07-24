@@ -20,6 +20,7 @@ export default function Contact() {
     }
     setIsDisabled(true)
   }
+  
 
   const handleFormSubmit = () => {
     setIsLoading(true)
