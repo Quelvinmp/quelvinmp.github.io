@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <div className="bg-base-200 py-14" id="contact">
       <h1 className="mb-8 text-4xl text-center" data-aos="fade" data-aos-duration="1500">Entre em contato!</h1>
-      <form data-aos="zoom-in" className="px-4" noValidate action="https://formsubmit.co/quelvinmp@gmail.com" method="POST" id="form">
+      <form data-aos="zoom-in" className="px-4" noValidate action={import.meta.env.VITE_ACTION_FORM} method="POST" id="form">
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://quelvinmp.github.io/feedback"
         />
