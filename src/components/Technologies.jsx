@@ -1,4 +1,4 @@
-import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub } from "react-icons/si";
+import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub, SiSequelize, SiPrisma, SiMiro, SiNodedotjs, SiChai, SiMocha } from "react-icons/si";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
@@ -26,6 +26,9 @@ export default function Technologies() {
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="JavaScript">
               <SiJavascript className="text-4xl" />
             </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="TypeScript">
+              <SiTypescript className="text-4xl" />
+            </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="React.js">
               <SiReact className="text-4xl" />
             </div>
@@ -46,14 +49,23 @@ export default function Technologies() {
         <div className="flex flex-col w-full gap-4">
           <div className="text-2xl divider" data-aos="fade">Back-end</div>
           <div className="flex flex-wrap items-center justify-center gap-5" data-aos="fade-right">
-            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="JavaScript">
-              <SiJavascript className="text-4xl" />
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="TypeScript">
+              <SiTypescript className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Node.js">
+              <SiNodedotjs className="text-4xl" />
             </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="MySQL">
               <SiMysql className="text-4xl" />
             </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Docker">
               <SiDocker className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Sequelize">
+              <SiSequelize className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Prisma">
+              <SiPrisma className="text-4xl" />
             </div>
           </div>
         </div>
@@ -65,6 +77,12 @@ export default function Technologies() {
             </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Jest">
               <SiJest className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Chai">
+              <SiChai className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Mocha">
+              <SiMocha className="text-4xl" />
             </div>
           </div>
         </div>
@@ -82,6 +100,9 @@ export default function Technologies() {
             </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Figma">
               <SiFigma className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Miro">
+              <SiMiro className="text-4xl" />
             </div>
           </div>
         </div>
