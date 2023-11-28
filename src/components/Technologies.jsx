@@ -1,6 +1,6 @@
-import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub, SiSequelize, SiPrisma, SiMiro, SiNodedotjs, SiChai, SiMocha } from "react-icons/si";
+import { SiHtml5, SiReact, SiRedux, SiTailwindcss, SiMysql, SiTypescript, SiTestinglibrary, SiJest, SiDaisyui, SiNextdotjs, SiCss3, SiJavascript, SiDocker, SiGit, SiFigma, SiTrello, SiGithub, SiSequelize, SiPrisma, SiMiro, SiNodedotjs, SiChai, SiMocha, SiLaravel, SiPhp } from "react-icons/si";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 export default function Technologies() {
@@ -66,6 +66,12 @@ export default function Technologies() {
             </div>
             <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Prisma">
               <SiPrisma className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="Laravel">
+              <SiLaravel className="text-4xl" />
+            </div>
+            <div className="p-2 w-fit h-fit rounded-xl tooltip" data-tip="PHP">
+              <SiPhp className="text-4xl" />
             </div>
           </div>
         </div>
