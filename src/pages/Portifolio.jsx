@@ -9,16 +9,16 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Portifolio() {
-  const {lightMode} = useContext(StateContext);
+  const { lightMode } = useContext(StateContext);
   return (
     <main data-theme={`${lightMode ? 'bumblebee' : 'dark'}`}>
-    <Header />
-    <Hero />
-    <Technologies />
-    <Projects />
-    <Achievements />
-    <Contact />
-    <Footer />
-  </main>
+      <Header />
+      <Hero />
+      <Technologies />
+      <Projects />
+      <Achievements />
+      <Contact />
+      <Footer />
+    </main>
   )
 }
